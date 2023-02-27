@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <title>Ntari Bespoke Finance</title>
+        <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 30; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+    </head>
+    <body>
+        <div class="nabar_js">
+            <div class="nav__title-bar">
+                <div class="menu">
+                    <!-- <h3 class="logo">Brand<span>Name</span></h3> -->
+                    <h3 class="logo">
+                        <a href="index.html">
+                            <img src="assets/image/logo.png" alt="" class="img-fluid">
+                        </a>
+                    </h3>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- click menu box -->
+            <div class="nav__menu-panel">
+                <div class="nav__menu-panel__bg-popups">
+                    <div class="nav__menu-panel__bg-popups__inner">
+                        <!-- Riobel -->
+                        <div id="nav_bg_riobel"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.40 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-small"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.41 AM (1).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.41 AM.jpeg">
+                        </div>
+                        <!-- Perrin and Rowe -->
+                        <div id="nav_bg_perrin-and-rowe"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM (1).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-small"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM (2).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM.jpeg">
+                        </div>
+                        <!-- Shaws -->
+                        <div id="nav_bg_shaws"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.46 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-small"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.49 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.49 AM.jpeg">
+                        </div>
+                        <!-- Rohl -->
+                        <div id="nav_bg_rohl"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.43 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-small"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.52 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.52 AM.jpeg">
+                        </div>
+                        <!-- Victoria + Albert -->
+                        <div id="nav_bg_victoria-plus-albert"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.48 AM (1).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-small"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.44 AM (1).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-large"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.41 AM.jpeg">
+                        </div>
+                        <!-- Riobel Showcase -->
+                        <div id="nav_bg_riobel-showcase"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM (2).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM (2).jpeg">
+                        </div>
+                        <!-- Perrin and Rowe -->
+                        <div id="nav_bg_perrin-and-rowe-showcase"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.46 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.46 AM.jpeg">
+                        </div>
+                        <!-- Shaws -->
+                        <div id="nav_bg_shaws-showcase"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM.jpeg">
+                        </div>
+                        <!-- Rohl -->
+                        <div id="nav_bg_rohl-showcase"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.45 AM.jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.45 AM.jpeg">
+                        </div>
+                        <!-- Victoria + Albert -->
+                        <div id="nav_bg_victoria-plus-albert-showcase"
+                             class="nav__menu-panel__bg-popups__popup js-nav__bg-rollover-img">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--left-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.41 AM (1).jpeg">
+                            <img class="nav__menu-panel__bg-popups__popup__img nav__menu-panel__bg-popups__popup__img--right-showcase"
+                                 src="assets/image/home/WhatsApp Image 2022-05-02 at 2.17.50 AM.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__menu-panel__positioner">
+                    <div class="nav__menu-panel__positioner__inner">
+                        <div class="nav__menu-panel__heading">Explore Rooms</div>
+                        <nav class="nav__menu-panel__menu">
+                            <ul class="nav__menu-panel__menu__ul">
+                                <li class="nav__menu-panel__menu__li">
+                                    <a id="nav_riobel"
+                                       href="riobel.html"
+                                       data-roll-item="riobel"
+                                       class="js-panel-init__load-in-place js-nav__bg-rollover-trigger">Elemental Minimalism</a>
+                                </li>
+                                <li class="nav__menu-panel__menu__li">
+                                    <a id="nav_perrin-and-rowe"
+                                       href="riobel-showcase.html"
+                                       data-roll-item="perrin-and-rowe"
+                                       class="js-panel-init__load-in-place js-nav__bg-rollover-trigger">Industrial Distinction</a>
+                                </li>
+                                <li class="nav__menu-panel__menu__li">
+                                    <a id="nav_shaws"
+                                       href="/shaws"
+                                       data-roll-item="shaws"
+                                       class="js-panel-init__load-in-place js-nav__bg-rollover-trigger">Timeless Character</a>
+                                </li>
+                                <li class="nav__menu-panel__menu__li">
+                                    <a id="nav_rohl"
+                                       href="/rohl"
+                                       data-roll-item="rohl"
+                                       class="js-panel-init__load-in-place js-nav__bg-rollover-trigger">Elite Details</a>
+                                </li>
+                                <li class="nav__menu-panel__menu__li">
+                                    <a id="nav_victoria-plus-albert"
+                                       href="/victoria-plus-albert"
+                                       data-roll-item="victoria-plus-albert"
+                                       class="js-panel-init__load-in-place js-nav__bg-rollover-trigger">Artfully Traditional</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="nav__menu-panel__heading">2021 New Product Showcase</div>
+                        <div class="nav__menu-panel__branding">
+                            <div class="nav__menu-panel__branding__item">
+                                <a id="brand_riobel-showcase"
+                                   class="js-panel-init__load-in-place"
+                                   href="/riobel-showcase">
+                                    <img class="nav__menu-panel__branding__img js-nav__bg-rollover-trigger"
+                                         data-roll-item="riobel-showcase"
+                                         src="assets/image/brand/riobel.svg"
+                                         alt="Riobel">
+                                    <span class="nav__menu-panel__branding__name">Riobel</span>
+                                </a>
+                            </div>
+                            <div class="nav__menu-panel__branding__item">
+                                <a id="brand_perrin-and-rowe-showcase"
+                                   class="js-panel-init__load-in-place"
+                                   href="/perrin-and-rowe-showcase">
+                                    <img class="nav__menu-panel__branding__img js-nav__bg-rollover-trigger"
+                                         data-roll-item="perrin-and-rowe-showcase"
+                                         src="assets/image/brand/perrin-and-rowe.svg"
+                                         alt="Perrin &amp; Rowe">
+                                    <span class="nav__menu-panel__branding__name">Perrin &amp; Rowe</span>
+                                </a>
+                            </div>
+                            <div class="nav__menu-panel__branding__item">
+                                <a id="brand_shaws-showcase"
+                                   class="js-panel-init__load-in-place"
+                                   href="/shaws-showcase">
+                                    <img class="nav__menu-panel__branding__img js-nav__bg-rollover-trigger"
+                                         data-roll-item="shaws-showcase"
+                                         src="assets/image/brand/shaws.svg"
+                                         alt="Shaws">
+                                    <span class="nav__menu-panel__branding__name">Shaws</span>
+                                </a>
+                            </div>
+                            <div class="nav__menu-panel__branding__item">
+                                <a id="brand_rohl-showcase"
+                                   class="js-panel-init__load-in-place"
+                                   href="/rohl-showcase">
+                                    <img class="nav__menu-panel__branding__img js-nav__bg-rollover-trigger"
+                                         data-roll-item="rohl-showcase"
+                                         src="assets/image/brand/rohl.svg"
+                                         alt="Rohl">
+                                    <span class="nav__menu-panel__branding__name">Rohl</span>
+                                </a>
+                            </div>
+                            <div class="nav__menu-panel__branding__item">
+                                <a id="brand_victoria-plus-albert-showcase"
+                                   class="js-panel-init__load-in-place"
+                                   href="/victoria-plus-albert-showcase">
+                                    <img class="nav__menu-panel__branding__img js-nav__bg-rollover-trigger"
+                                         data-roll-item="victoria-plus-albert-showcase"
+                                         src="assets/image/brand/victoria-plus-albert.svg"
+                                         alt="Victoria + Albert">
+                                    <span class="nav__menu-panel__branding__name">Victoria + Albert</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- click menu box end -->
+        </div>
+        <!-- banner content start -->
+        <div class="main">
+            <div class="banner-content">
+                <div class="container containers">
+                    <div class="row">
+                        <div class="col-lg-8">
+                         <div class="left-content">
+                             <div class="heading">Introducing</div>
+                             <h1 class="banner-title">2021 Riobel New Product Showcase</h1>
+                             <p>With award-winning collections and the most advanced performance, Riobel<sup>®</sup> is luxury designed to be lived with.</p>
+                         </div>
+                        </div>
+                        <div class="col-lg-4">
+                         <div class="brand">
+                             <img src="./assets/image/brand/riobel.svg" alt="" class="img-fluid">
+                         </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <!-- banner content end-->
+            <!-- collection section start -->
+            <section id="collection">
+                <div class="container main-container">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="section-title text-center">
+                                <div class="product-intro-title">
+                                    Reflet Bathroom Collection
+                                </div>
+                                <p>Encapsulates a soft wavy surface embedded within a rigid frame, balancing the elegance and the power of water with a duality enhanced through the combination of brushed and polished surfaces.</p>
+                                <a href="#">Download Sell Sheet</a>
+                                <div class="product-finish">
+                                    <div class="product-finish-title">
+                                        Available Finishes
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/C.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BC.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BN.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Nickel
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BG.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Gold
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <img id="myImg"  src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.40 AM.jpeg" alt="" class="img-fluid">
+                                <div class="product-details">
+                                    RFS01C
+                                </div>
+                                <div class="product-name">
+                                    Single Handle Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <img id="myImg"  src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.41 AM.jpeg" alt="" class="img-fluid">
+                                <div class="product-details">
+                                    RFL01C
+                                </div>
+                                <div class="product-name">
+                                    Single Handle Tall Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <img id="myImg"  src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM.jpeg" alt="" class="img-fluid">
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <img id="myImg"  src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.43 AM.jpeg" alt="" class="img-fluid">
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.44 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.45 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.46 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.47 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.48 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.49 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.50 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.51 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.43 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.42 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.47 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 m-auto">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/home/WhatsApp Image 2022-05-02 at 2.17.40 AM.jpeg" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- collection section end -->
+
+            <!-- extention section start -->
+
+            <section id="extention">
+                <div class="container main-container">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="section-title text-center">
+                                <div class="product-intro-title">
+                                    Riu Bath Line Extension
+                                </div>
+                                <p>Instills subtlety and grace through its sleek form and either rounded, swan-like spout or its square, more industrial approach.</p>
+                                <a href="#">Download Sell Sheet</a>
+                                <div class="product-finish">
+                                    <div class="product-finish-title">
+                                        Available Finishes
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/C.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BC.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BN.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Nickel
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BK.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Black
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BG.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Gold
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-01.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RFS01C
+                                </div>
+                                <div class="product-name">
+                                    Single Handle Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-02.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RFL01C
+                                </div>
+                                <div class="product-name">
+                                    Single Handle Tall Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-03.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-01.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-04.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-03.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 m-auto">
+                                <div class="row">
+                                    <div class="col-lg-6 text-center">
+                                        <div class="product text-center">
+                                            <a href="#"><img src="./assets/image/exten-04.png" alt="" class="img-fluid"></a>
+                                            <div class="product-details">
+                                                RF08C
+                                            </div>
+                                            <div class="product-name">
+                                                Widespread Lavatory Faucet
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 text-center">
+                                        <div class="product text-center">
+                                            <a href="#"><img src="./assets/image/exten-07.png" alt="" class="img-fluid"></a>
+                                            <div class="product-details">
+                                                RF08C
+                                            </div>
+                                            <div class="product-name">
+                                                Widespread Lavatory Faucet
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </section>
+            <!-- extension section end -->
+
+            <!-- kitchen line extention start -->
+            <section id="kitchen-extention">
+                <div class="container main-container">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="section-title text-center">
+                                <div class="product-intro-title">
+                                    Kitchen Line Extension
+                                </div>
+                                <p>Now touchless is effortless and stylish, marrying high performance and design excellence. A left-side sensor activates with a simple wave of a hand, and ensures the faucet won’t turn on accidentally. </p>
+                                <a href="#">Download Sell Sheet</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="product-finish text-center">
+                                <div class="product-titles">
+                                    Trattoria Collection
+                                </div>
+                                <div class="product-finish-title finish-title">
+                                    Available Finishes
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-3">
+                                        <div class="finish">
+                                            <img src="./assets/image/C.png" alt="" class="img-fluid">
+                                            <div class="finish-label">
+                                                chrome
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="finish">
+                                            <img src="./assets/image/SS.png" alt="" class="img-fluid">
+                                            <div class="finish-label">
+                                                Stainless Steel
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="finish">
+                                            <img src="./assets/image/BK.png" alt="" class="img-fluid">
+                                            <div class="finish-label">
+                                                Black
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="finish">
+                                            <img src="./assets/image/BG.png" alt="" class="img-fluid">
+                                            <div class="finish-label">
+                                                Brushed Gold
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/kitchen-01.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/kitchen-02.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 pt-5">
+                                <div class="product-finish text-center">
+                                    <div class="product-titles">
+                                        Trattoria Collection
+                                    </div>
+                                    <div class="product-finish-title finish-title">
+                                        Available Finishes
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-3">
+                                            <div class="finish">
+                                                <a href="#"><img src="./assets/image/C.png" alt="" class="img-fluid"></a>
+                                                <div class="finish-label">
+                                                    chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="finish">
+                                                <img src="./assets/image/PN.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Polished Nickel
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="finish">
+                                                <img src="./assets/image/BN.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Nickel
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="finish">
+                                                <img src="./assets/image/BK.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Black
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="finish">
+                                                <img src="./assets/image/BG.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Gold
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 text-center">
+                                <div class="product text-center">
+                                   <a href="#"> <img src="./assets/image/kitchen-01.png" alt="" class="img-fluid"></a>
+                                    <div class="product-details">
+                                        RF08C
+                                    </div>
+                                    <div class="product-name">
+                                        Widespread Lavatory Faucet
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <!-- kitchen line extention end -->
+
+            <!-- finish extention section start -->
+            <section id="extention">
+                <div class="container main-container">
+                    <div class="row">
+                        <div class="col-lg-6 m-auto">
+                            <div class="section-title text-center">
+                                <div class="product-intro-title">
+                                    Azure Finish Extension
+                                </div>
+                                <p>A perfect meeting of form and function, it captures a sense of motion and artistry with its arc reminiscent of an ocean wave. Now available in Polished Nickel.</p>
+                                <a href="#">Download Sell Sheet</a>
+                                <div class="product-finish">
+                                    <div class="product-finish-title">
+                                        Available Finishes
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/C.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BC.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Chrome
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BN.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Nickel
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BK.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Black
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="finish">
+                                                <img src="./assets/image/BG.png" alt="" class="img-fluid">
+                                                <div class="finish-label">
+                                                    Brushed Gold
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/finish-01.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RFS01C
+                                </div>
+                                <div class="product-name">
+                                    Single Handle Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/finish-02.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RFL01C
+                                </div>
+                                <div class="product-name">
+                                    Single Handle Tall Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/finish-03.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-01.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-04.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="product text-center">
+                                <a href="#"><img src="./assets/image/exten-03.png" alt="" class="img-fluid"></a>
+                                <div class="product-details">
+                                    RF08C
+                                </div>
+                                <div class="product-name">
+                                    Widespread Lavatory Faucet
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <!--finish extension section end -->
+
+            <!--industrial distinction section end -->
+            <section id="distinction">
+                <div class="main-distinction">
+                    <div class="distinction-img">
+                        <a href="#"><img src="./assets/image/KBIS_Riobel-Bottom-Callout-Next.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="distinction-overlay"></div>
+                    <a href="#" class="distinction-content">
+                        <div class="distin-title">
+                            Industrial Distinction
+                        </div>
+                        <button class="distin-btn">Explore</button>
+                    </a>
+                </div>
+            </section>
+            <!--industrial distinction section end -->
+          
+        </div>
+
+
+
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            </script>
+    </body>
+</html>
